@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="content-section text-center pt-4">
+      <h1>Something went wrong (500)</h1>
+      <img class="img-responsive mx-auto d-block"
+      style="width: 600px; max-width:75%"
+      src="{{ url_for('static', filename='errors/default_500.jpg' )}}" alt=""/>
+      <p>We're experiencing some trouble on our end. Please try again in the near future</p>
+    </div>
+{% endblock content %}

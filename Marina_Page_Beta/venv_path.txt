@@ -1,0 +1,1 @@
+"C:\Users\john\Desktop\Tutorials\Flask Tutorial for Blog (Jan 19)\project1_env\WorkingOnArtistPage\venv\Scripts\activate.bat"

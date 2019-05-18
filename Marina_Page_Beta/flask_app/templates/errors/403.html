@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+      <div class="content-section text-center pt-4">
+        <img class="img-responsive mx-auto d-block"
+        style="width: 600px; max-width:75%"
+        src="{{ url_for('static', filename='errors/default_500.jpg' )}}" alt=""/>
+        <h1>I'm sorry, Ron, you don't have permission to do that (403)</h1>
+      </div>
+{% endblock content %}

@@ -1,0 +1,10 @@
+using this tutorial
+https://wsvincent.com/django-rest-framework-react-tutorial/
+
+
+This has already been built, in very rough format in 
+/home/john/Projects/Programming/JS_practice/React/Django_API_options/simple_rest_api_with_cors
+
+
+Works fine, the only issue would be how loose the API/Frontend are held together
+meaning, that's why you HAVE TO USE cors

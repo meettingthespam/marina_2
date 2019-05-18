@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="maps_href">
+      <h1 class="text-left"><a style="color:#444444" href="https://www.facebook.com/theartistryrealm/" target="_blank">The Artistry Realm </a></h1>
+      <p class="text-left">We're located at <a style="color:#444444" href="https://www.google.com/maps/place/The+Artistry+Realm+Tattoo+%26+Art+Studio/@39.7443449,-86.2784769,17z/data=!3m1!4b1!4m5!3m4!1s0x886ca7c96085f947:0xda7c1b1f0c50030b!8m2!3d39.7443408!4d-86.2762882"
+        target="_blank"> 6663 W Washington St, Indianapolis, IN 46241.</a> Phone: (317)220-8790</p>
+      <p>Appointments and walk-ins welcomed</p>
+</div>
+{% with %}
+    {% set location=(39.744563, -86.276208) %}
+    {% set style="width:400px;height:400px;"%}
+
+    {{
+    googlemap(
+        "simple-map",
+        location.0, location.1,
+        markers=[location,],
+        style=style
+        )
+    }}
+
+{% endwith %}
+
+{% endblock content %}
